@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="ISO-8859-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+  <nav class="nav">
+      <a href="/home" class="view-info">Home</a>
+      <a href="/viewIn" class="view-info">View Student</a>
+      <a href="/addStud" class="view-info">Add Student</a>
+  </nav>
+  <form action="/update" method="post">
+  <input type="hidden" name="_method" value="put">
+    <div class="hero hero-update">
+      <label for="" class="label">Enter Student ID<span class="mandatory">*</span></label>
+    <input type="text" name="roll" id="upd-name" class="btn-view" required>
+      <label for="" class="label">Enter Student Name<span class="mandatory">*</span></label>
+    <input type="text" name="name" id="upd-id" class="btn-view" pattern="[a-zA-Z]{3,15}" title="At least 3 characters" required>
+      <label for="" class="label">Enter Student Branch<span class="mandatory">*</span></label>
+    <input type="text" name="branch" id="upd-branch" class="btn-view" pattern="[a-zA-Z]{2,50}" title="At least 2 characters" required>
+    <button class="btn-view">Update Student</button>
+  </div>
+  </form>
+</body>
+</html>

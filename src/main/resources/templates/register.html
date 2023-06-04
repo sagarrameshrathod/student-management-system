@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="ISO-8859-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+  <nav class="nav">
+      <a href="/home" class="view-info">Home</a>
+      <a href="/viewIn" class="view-info">View Student</a>
+      <a href="/addStud" class="view-info">Add Student</a>
+  </nav>
+  <form action="/addStudent" method="post">
+    <div class="hero hero-register">
+      <label for="" class="label">Enter Student ID<span class="mandatory">*</span></label>
+    <input type="text" name="roll" id="reg-name" class="btn-view" pattern="[a-zA-Z]{3}[0-9]{4}" title="1st 3 should be characters after number 4 numbers" required>
+      <label for="" class="label">Enter Student Name<span class="mandatory">*</span></label>
+    <input type="text" name="name" id="reg-id" class="btn-view" pattern="[a-zA-Z]{3,15}" title="At least 3 characters" required>
+      <label for="" class="label">Enter Student Branch<span class="mandatory">*</span></label>
+    <input type="text" name="branch" id="reg-branch" class="btn-view" pattern="[a-zA-Z]{2,50}" title="At least 2 characters" required>
+    <button type="submit" class="btn-view">Add Student</button>
+  </div>
+  </form>
+</body>
+</html>

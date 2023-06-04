@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Details</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+  <nav class="nav">
+      <a href="/home" class="view-info">Home</a>
+      <a href="/viewIn" class="view-info">View Student</a>
+      <a href="/addStud" class="view-info">Add Student</a>
+  </nav>
+  <div class="hero">
+    <table class="table">
+      <tr>
+        <th>KodNest-ID</th>
+        <th>Name</th>
+        <th>Branch</th>
+      </tr>
+      <tr>
+        <td th:text="${student.roll}">KodNest-ID</td>
+        <td th:text="${student.name}">Name</td>
+        <td th:text="${student.branch}">Branch</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

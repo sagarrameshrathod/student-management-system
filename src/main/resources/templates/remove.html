@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="ISO-8859-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+  <nav class="nav">
+      <a href="/home" class="view-info">Home</a>
+      <a href="/viewIn" class="view-info">View Student</a>
+      <a href="/addStud" class="view-info">Add Student</a>
+  </nav>
+  <form action="/delete" method="post">
+    <div class="hero hero-remove">
+      <label for="">Student ID<span class="mandatory">*</span></label>
+      <input type="text" name="roll" id="remove-id" class="btn-view" required>
+      <button type="submit" class="btn-view">Remove Student</button>
+    </div>
+  </form>
+</body>
+</html>
